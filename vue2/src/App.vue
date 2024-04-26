@@ -1,19 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>{{ num }}</div>
+    <Button @change="onChange" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Button from "./components/Button.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Button
+  },
+  data() {
+    return {
+      num: 0
+    };
+  },
+  methods: {
+    onChange() {
+      this.num++;
+    }
   }
-}
+};
 </script>
 
 <style>
