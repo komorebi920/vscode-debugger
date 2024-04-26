@@ -14,6 +14,7 @@ export default class App extends Vue {
   num: number = 0;
 
   onChange() {
+    debugger;
     this.num++;
   }
 }

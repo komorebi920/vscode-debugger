@@ -8,6 +8,7 @@ import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class Button extends Vue {
   onClick() {
+    debugger;
     this.$emit("change");
   }
 }
